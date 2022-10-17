@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./assets/css/styles.css'>
+    <title>Technical Documentation Practice Page</title> 
+  </head>
+  <body>
+    <nav id='navbar'>
+      <header><h1>Becoming a web developer</h1></header>
+      <ul>
+        <li><a class='nav-link' href='#introduction'>Introduction</a></li>
+        <li><a class='nav-link' href='#what_you_should_already_know'>What you should already know</a></li>
+        <li><a class='nav-link' href='#html'>HTML</a></li>
+        <li><a class='nav-link' href='#css'>CSS</a></li>
+        <li><a class='nav-link' href='#javascript'>JavaScript</a></li>
+        <li><a class='nav-link' href='#reference'>Reference</a></li>
+      </ul>
+    </nav>
+    <main id='main-doc'>
+      <section class='main-section' id='introduction'>
+        <header><h2>Introduction</h2></header>
+        <p><strong>Who is a web developer?</strong></p>
+        <p>A web developer is someone who creates a website. A developer can be a <strong>frontend</strong> (i.e the user interface of the website) developer, a <strong>backend</strong> (i.e the server-side interface of the site) developer or a <strong>full stack</strong> (i.e both frontend and backend) developer.</p>
+        <p><strong>How do you become a web developer?</strong></p>
+        <p>There are many documentations, sites, videos etc. that would help you and this is one of those. Though this is focused on frontend development, you can always consider other sites for other parts. Read through this documentation to guide you.</p>
+      </section>
+      <section class='main-section' id='what_you_should_already_know'>
+        <header><h2>What you should already know</h2></header>
+        <p>First of all you should already know how to at least type using a keyboard and have knowledge on how to use a system. And lots of dedication because you are going to need many of those.</p>
+        <p>If you are good with aesthetics and color mixture then you would probably make a good frontend developer but if you are good with logic then backend development would be best suited for you. Remember there is no guarantee in this assumption and of course if you feel like you got all it takes then you can always be a full stack developer.</p>
+
+      </section>
+      <section class='main-section' id='html'>
+        <header><h2>HTML</h2></header>
+        <p>Hypertext Markup Language (HTML) is a  markup language that defines the structure of the each page in a website.</p>
+        <p>It is used to display the content of what is written into the  browser. The HTML file is saved with a <kbd>.html</kbd> file extension.</p>
+        <p>HTML contents are written in elements with opening and closing tags. Most of these elements are nested in two sub-main elements which are the head element (for describing the content of the webpage) and the body element (for the visual part of the webpage). All of the elements are futher nested in a single parent element which is the html element. Below is a sample of a typical HTML document.</p>
+        <code>
+          &#60;!DOCTYPE html>
+          &#60;html>
+          &#60;head>
+          &#60;title>Web title&#60;/title>
+          &#60;/head>
+          &#60;body>
+          &#60;h1>Hello World!&#60;/h1>
+          &#60;p>My first webpage&#60;/p>
+          &#60;/body>
+          &#60;/html>
+        </code>
+        <p>Worthy of note are:</p>
+        <li>The opening tags - &#60;tagname></li>
+        <li>The closing tags - &#60;/tagname></li>
+      </section>
+      <section class='main-section' id='css'>
+        <header><h2>CSS</h2></header>
+        <p>Cascading Style Sheet (CSS) is a styling language used to style the HTML document. When we see designed websites, CSS was used to beautify them.</p>
+        <p>CSS has a syntax which each styling must follow and that is - <b>selector {property: value;}</b></p>
+        <p>The 'selector' is the specified element chosen for styling, the 'property' is the chosen area of style (e.g font size, background color etc.) of the selector you want to change and the 'value' is the chosen value of the property (e.g 10px, red etc.)</p>
+        <p>We can style the heading of a document with this example:</p>
+          <code>
+            h1 {
+              font-weight: bold;
+              background-color: grey;
+              color: white;
+              padding: 10px auto;
+            }
+          </code>
+        <p>CSS can be added to an HTML file by:</p>
+        <li>Inline styling - is directly writing the styles in the HTML document using the style attribute of the selected element e.g</li>
+        <code>
+          &#60;p
+            style="width: 150px;">
+              Hello World!
+            &#60;/p>
+        </code>
+        <li>Internal styling - is writing the styles in the HTML file by using the style element e.g</li>
+        <code>
+          &#60;style>
+            button {
+              width: 150px;
+              height: 100px;
+            }
+          &#60;/style>
+        </code>
+        <p><b>Note: </b>It is highly recommended to nest internal styles in the head element of your document</p>
+        <li>External styling - is writing the styles in a different file entirely and then linked to the HTML document by a self closing link element. The CSS file is saved with a <kbd>.css</kbd> file extension. For example the sample below is a CSS file with filename <kbd>styles.css</kbd> and is imported to our HTML document</li>
+        <code>
+          &#60;head>
+            &#60;link rel="stylesheet"
+            href="styles.css">
+          &#60;/head>
+          </code>
+      </section>
+      <section class='main-section' id='javascript'>
+        <header><h2>JavaScript</h2></header>
+        <p>JavaScript programming language is used to characterize the HTML document. That is to say it tells the elements how to behave upon user interaction.</p>
+        <p>JS can also be internal or external and are written or linked to the HTML document using the <kbd>&#60;script></kbd> tag.</p>
+        <p>An example of a JS code:</p>
+        <pre>
+        <code>
+          var x = 1;
+          var y = 12;
+          var z = x + y;
+        </code>
+        </pre>
+      </section>
+      <section class='main-section' id='reference'>
+        <header><h2>Reference</h2></header>
+        <li>For more information on web development, you can visit <a href="https://www.w3schools.com">W3Schools</a></li>
+        <li>And for more hands on practice while learning, visit <a href="https://www.freecodecamp.org">freeCodeCamp</a></li>
+      </section>
+    </main>
+  </body>
+</html>

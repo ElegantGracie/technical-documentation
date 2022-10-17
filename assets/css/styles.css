@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: rgb(27, 25, 25);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #navbar {
+    width: 70vw;
+    height: 100vh;
+    position: static;
+  }
+  #navbar header {
+    color: khaki;
+    font-size: 1.2rem;
+  }
+  #navbar ul li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    padding: 20px 10px;
+    border-bottom: 1px solid whitesmoke;
+  }
+  #main-doc {
+    height: 100vh;
+    padding: 20px 15px;
+    overflow-y: scroll;
+  }
+  .main-section {
+    margin-top: 10px;
+  }
+  .main-section header {
+    margin-bottom: 10px;
+    color: khaki;
+    font-size: 1.2rem;
+  }
+  .main-section p {
+    margin: 15px 20px;
+    font-size: 1.1rem;
+  }
+  .main-section b,
+  main-section strong {
+    color: khaki;
+  }
+  .main-section kbd {
+    background-color: dimgray;
+    color: khaki;
+  }
+  .main-section code {
+    color: green;
+    display: block;
+    text-align: justify;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .main-section li {
+    margin: 10px 25px;
+    font-size: 1.1rem;
+  }
+  .main-section a:link,
+  #navbar a:link {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.1rem;
+  }
+  .main-section a:visited,
+  #navbar a:visited {
+    color: red;
+  }
+  .main-section a:hover,
+  #navbar a:hover {
+    color: khaki;
+  }
+  .main-section a:active,
+  #navbar a:active {
+    color: purple;
+  }
+  
+  /* smaller screens */
+  @media (max-width: 600px) {
+    #navbar ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    }
+  }
