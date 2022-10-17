@@ -1,5 +1,5 @@
 # Technical Documentation Page
-This is a requirement for the Free Code Camp's Responsive Web Design curriculum.
+This is a requirement for the certification of Free Code Camp's Responsive Web Design curriculum.
 
 ## Contents
 - [Overview](#overview)
